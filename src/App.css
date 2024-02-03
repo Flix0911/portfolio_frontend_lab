@@ -1,3 +1,68 @@
+html{
+  background-color: #7382a3;
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  text-align: center;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.main h1 p {
+  font-size: 30px;
+  display: flex;
+  text-indent: 10%;
+  background-color: #8096c5;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  text-decoration: none;
+}
+
+.project h1 {
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.project img {
+  max-width: 60%;
+  margin: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 15%;
+  margin: auto;
+  font-size: 50px;
+  color: white;
+}
+
+.button:hover {
+  background-color: red;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +100,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+  box-shadow: 0 0 20 px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #393f4f;
+  text-align: center;
+  padding: 2em;
+}
+
+.profile-name {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.profile-name::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 2em;
+  background: purple;
+  margin: .7em auto 0.5em;
+}
+
+.profile-position {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: 3px;
+  color: gray;
+  margin-bottom: 2em;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 2px solid gray;
+  max-width: 5%; 
+
+}
+
+.profile-body {
+  font-weight: 300;
+
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.social-link {
+  color: gray;
+  opacity: 0.5;
+  font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  opacity: 1;
 }

@@ -5,15 +5,17 @@ function Projects(props) {
     const projects = useLoaderData()
 
     return projects.map((project) => (
-        <div>
-            <h1>{project.name}</h1>
+        <div className="projects">
+            <div className="project">
+            <h1>Title: {project.name}</h1>
             <img src={project.image}/>
-            <a href={project.git}>
+            <a  className="button" href={project.git}>
                 <button>Github</button>
             </a>
-            <a href={project.live}>
+            <a className="button" href={project.live}>
                 <button>Live Site</button>
             </a>
+            </div>
         </div>
     ))
 }
